@@ -1,0 +1,49 @@
+.navbar {
+  background-color: #4caf50;
+  padding: 10px 20px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 7%;
+  right: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+.navbar .navbar-brand {
+  font-size: 22px;
+
+}
+
+.navbar .nav-link {
+  font-size: 18px;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.navbar .nav-link:hover {
+  color: rgba(76, 77, 79, 0.7);
+}
+
+.navbar .nav-dropdown .dropdown-toggle {
+  color: white;
+  background-color: transparent;
+  border: none;
+}
+
+.navbar .nav-dropdown .dropdown-menu {
+  background-color: #4caf50;
+  border: none;
+  border-radius: 0;
+}
+
+.navbar .nav-dropdown .dropdown-item {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.navbar .nav-dropdown .dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}

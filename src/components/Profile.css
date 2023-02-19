@@ -1,0 +1,80 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+section {
+  display: grid;
+  place-items: center;
+  height: max-content;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+#about {
+  margin-top: -80px;
+}
+
+#projects,
+#contact {
+  color: #3b3b3c;
+  background: #eaf2fa;
+}
+
+
+.nav {
+  padding : auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: top;
+  position: -webkit-sticky;
+  position: fixed;
+  top : 100px;
+  height: 100%;
+  width : 20%;
+}
+
+.nav__container {
+    background-color: #eaf2fa;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: relative;
+}
+
+.nav__container__actions {
+  display: inline-flex;
+  flex-flow: column nowrap;
+  padding-left: 50px;
+  flex: 1;
+}
+
+ul {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  font-size: 0.9rem;
+  list-style: none;
+  padding: 0;
+}
+
+.active {
+  font-weight: bold;
+}
+
+li {
+  cursor: pointer;
+}
+
+li:hover {
+  text-decoration: none;
+}
+
+#academic, #publication, #other{
+  background-color: whitesmoke;
+}

@@ -1,0 +1,67 @@
+.userProfile {
+  font-weight: normal;
+  font-size: 16px;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 10px rgb(0,0,0,0.1);
+}
+td{
+ padding: 8px;
+}
+.userProfileData {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.editButton {
+  margin-top: 10px;
+}
+
+.userProfileForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userProfileForm label {
+  display: block;
+  margin: 10px 0;
+}
+
+.userProfileForm textarea {
+  height: 100px;
+}
+
+.userProfileFormButtons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .userProfile {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .userProfileData {
+    padding-right: 20px;
+    margin-right: 20px;
+  }
+
+  .userProfileForm {
+    width: 50%;
+  }
+}
+
+.userProfileFormButtons {
+  display: flex;
+  justify-content: center;
+}
+
+.userProfileFormButtons button {
+  margin: 0 10px;
+}
