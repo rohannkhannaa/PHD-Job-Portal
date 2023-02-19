@@ -1,125 +1,219 @@
-.resume-uploader {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    font-size: 16px;
-  }
-  
-  .upload-container {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-    width: 100%;
-  }
-  
-  .resume-container,
-  .cover-letter-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .file-name {
-    margin: 10px 0;
-  }
-  
-  .resumes-container {
-    margin-top: 20px;
-    width: 100%;
-  }
-  
-  .resume-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
-    padding: 20px;
-    border: 1px solid #ced4da;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px #ced4da;
-    font-size: 16px;
-  }
+.upload-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  width: 100%;
+}
 
-  .upload-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    font-size: 16px;
-  }
-  
-  .upload-label {
-    margin-bottom: 10px;
-    font-weight: bold;
-  }
-  
-  .upload-input {
-    margin-bottom: 20px;
-  }
-  
-  .upload-button {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
+.upload-container > * {
+  flex: 1 1 30%;
+  max-width: 300px;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+
+.cover-letter-container, .resume-container {
+  font-size: 16px;
+  padding: 50px;
+  margin: 10px;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 45%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 25px;
+}
+
+.cover-letter-container h2, .resume-container h2 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.cover-letter-container p, .resume-container p {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+
+/* .upload-container > .resume-container, .upload-container > .cover-letter-container {
+  font-size: 14px;
+  border: 1px solid #ced4da;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.upload-container > .resume-container > *, .upload-container > .cover-letter-container > * {
+  margin-top: 10px;
+  font-size: 14px;
+} */
+
+
+.file-name {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.file-name > span {
+  font-weight: normal;
+}
+
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 16px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  text-align: center;
+}
+
+.upload-label {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.upload-input {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.upload-button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-button:hover {
+  background-color: #0069d9;
+}
+
+.resume-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 16px;
+}
+
+.resume-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #ced4da;
+  background-color: #f7f7f7;
+  max-width: 300px;
+}
+
+.resume-title {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.resume-link {
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.resume-link:hover {
+  color: #0056b3;
+}
+
+.delete-button {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #dc3545;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
   
   .upload-button:hover {
-    background-color: #0069d9;
+  background-color: #0069d9;
   }
   
   .resume-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    font-size: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 16px;
+  background-color: #ffffff;
   }
   
   .resume-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
-    padding: 20px;
-    border: 1px solid #ced4da;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px #ced4da;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #ced4da;
+  background-color: #ffffff;
   }
   
   .resume-title {
-    margin-bottom: 10px;
-    font-weight: bold;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #007bff;
   }
   
   .resume-link {
-    margin-bottom: 10px;
-    text-decoration: none;
-    color: #007bff;
-    transition: color 0.3s ease;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s ease;
   }
   
   .resume-link:hover {
-    color: #0056b3;
+  color: #0056b3;
   }
   
   .delete-button {
-    padding: 5px;
-    border: none;
-    border-radius: 5px;
-    background-color: #dc3545;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #dc3545;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
   }
   
   .delete-button:hover {
     background-color: #c82333;
+    box-shadow: 0px 0px 5px #c82333;
   }
   

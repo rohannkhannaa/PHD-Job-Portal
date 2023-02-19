@@ -51,7 +51,7 @@ const AcademicDetails = () => {
 
     return (
       <div className="form-container">
-        <h2>{degreeForm.id ? 'Edit Degree' : 'Add Degree'}</h2>
+        <h2>{degreeForm.id ? 'Edit Degree' : <span>Add Degree</span>}</h2>
         <form onSubmit={degreeForm.id ? ((event) => handleEditSubmit(event, degreeForm.id)) : handleFormSubmit}>
           {degreeFormError && <p className="form-error">{degreeFormError}</p>}
           <div className="form-group">
@@ -63,9 +63,14 @@ const AcademicDetails = () => {
             <input type="text" id="degree-study" name="degreeStudy" value={degreeForm.degreeStudy} onChange={(event) => setDegreeForm({ ...degreeForm, degreeStudy: event.target.value })} required />
           </div>
           <div className="form-group">
-            <label htmlFor="grading-scale">Grading Scale:</label>
-            <input type="text" id="grading-scale" name="gradingScale" value={degreeForm.gradingScale} onChange={(event) => setDegreeForm({ ...degreeForm, gradingScale: event.target.value })} required />
-          </div>
+  <label htmlFor="grading-scale">Grading Scale:</label>
+  <select id="grading-scale" name="gradingScale" value={degreeForm.gradingScale} onChange={(event) => setDegreeForm({ ...degreeForm, gradingScale: event.target.value })} required>
+    <option value="">Select grading scale</option>
+    <option value="4">4-point scale</option>
+    <option value="10">Out of 10</option>
+    <option value="100">Out of 100</option>
+  </select>
+</div>
           <div className="form-group">
             <label htmlFor="grade-obtained">Grade Obtained:</label>
             <input type="text" id="grade-obtained" name="gradeObtained" value={degreeForm.gradeObtained} onChange={(event) => setDegreeForm({ ...degreeForm, gradeObtained: event.target.value })} required />

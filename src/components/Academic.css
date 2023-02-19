@@ -1,3 +1,37 @@
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-shadow: 1px 1px #eee;
+}
+h2 span {
+  color: #1e90ff;
+}
+
+
+p {
+  margin: 5px 0;
+}
+
 .academic-details-container {
   font-size: 16px;
   padding: 100px;
@@ -5,18 +39,34 @@
   text-align: center;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 0 10px rgb(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 51%;
   height: 100%;
+  background-color: #fff;
+  border-radius: 25px;
 }
+
+.academic-details-container h2 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.academic-details-container p {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+
 
 .add-degree-button {
   margin: 20px;
   padding: 10px 20px;
-  border: 1px solid #333;
+  border: none;
   border-radius: 5px;
-  background-color: #fff;
-  color: #333;
+  background-color: #40c1ac;
+  color: #fff;
   font-size: 1.2rem;
   cursor: pointer;
 }
@@ -26,34 +76,62 @@
   margin: 0 auto;
   text-align: left;
   padding: 20px;
-  border: 1px solid #333;
+  border: 1px solid #ccc;
   border-radius: 5px;
   font-size: small;
+  background-color: #fff;
 }
 
 .form-group {
-  font-size: small;
-  margin: 10px 0;
+  display: grid;
+  grid-template-columns: 160px auto;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-left: 80px;
 }
 
 .form-group label {
-  display: block;
-  margin-bottom: 5px;
-  font-size: 1.2rem;
+  display: inline-block;
+  width: 160px;
+  text-align: left;
+  margin-right: 20px;
+  letter-spacing: 1px;
   font-weight: bold;
+  text-shadow: 1px 1px #eee;
+}
+.form-group input {
+  padding: 5px 8px;
+  font-size: 14px;
+  border: 0px solid transparent;
+  border-radius: 4px;
+  width: 70%;
+  box-sizing: border-box;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
-.form-group input {
-  padding: 5px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  font-size: 1.2rem;
-}
 
 .form-group input:focus {
   outline: none;
-  border-color: #333;
+  border-color: #2196F3;
+  box-shadow: 0 0 5px #060707;
 }
+
+#grading-scale {
+  background-color: #f2f2f2;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  width: 70%;
+  box-sizing: border-box;
+}
+
+#grading-scale-input {
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+}
+
+
 
 .form-group input:invalid {
   border-color: #f00;
@@ -71,10 +149,11 @@
   width: 300px;
   margin-bottom: 20px;
   padding: 20px;
-  border: 1px solid #333;
+  border: 1px solid #ccc;
   border-radius: 5px;
   display: inline-block;
   text-align: left;
+  background-color: #fff;
 }
 
 .degree-card h2 {
@@ -90,16 +169,33 @@
 
 .degree-actions button {
   padding: 5px 10px;
-  border: 1px solid #333;
+  border: none;
   border-radius: 5px;
-  background-color: #fff;
-  color: #333;
+  background-color: #40c1ac;
+  color: #fff;
   cursor: pointer;
 }
 
 .degree-actions button:first-child {
   margin-right: 10px;
 }
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0 auto;
+display: block;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
 
 @media screen and (max-width: 768px) {
   .degree-list {
@@ -111,39 +207,26 @@
   }
 }
 
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #333;
-  background-color: #f2f2f2;
-  margin: 0;
-  padding: 0;
-}
-
-h1 {
-  margin-bottom: 20px;
-}
-
-h2 {
-  margin-bottom: 10px;
-}
-
-p {
-  margin: 5px 0;
-}
-
 @media screen and (max-width: 480px) {
   h1 {
     font-size: 2rem;
   }
 
-  h2 {
-    font-size: 1.5rem;
-  }
+ 
+  
 
-  p {
-    font-size: 1.1rem;
-  }
-}
 
+p {
+  font-size: 1.1rem;
+  }
+  
+  .form-group input {
+  width: 60%;
+  font-size: 1rem;
+  }
+  }
+  
+  
+  
+  
+  

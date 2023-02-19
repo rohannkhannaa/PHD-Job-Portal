@@ -40,9 +40,11 @@ function ResumeUploader() {
             </p>
           )}
         </div>
+        
         <div className="cover-letter-container">
-          <label htmlFor="cover-letter">Upload Cover Letter:</label>
-          <input type="file" id="cover-letter" onChange={handleCoverLetterChange} />
+          <label htmlFor="cover-letter">Upload Resume:</label>
+          <input type="file" id="cover-letter" onChange={handleResumeChange} />
+          <button onClick={handleCoverLetterChange}>Upload</button>
           {coverLetter && (
             <p className="file-name">
               {coverLetter.name}{" "}
@@ -50,6 +52,7 @@ function ResumeUploader() {
             </p>
           )}
         </div>
+        
       </div>
       <div className="resumes-container">
         {resumes.map((resume, index) => (

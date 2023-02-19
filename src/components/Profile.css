@@ -1,5 +1,6 @@
+/* Global Styles */
 .App {
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-align: center;
 }
 
@@ -22,37 +23,68 @@ section {
   background: #eaf2fa;
 }
 
-
+/* Navigation Styles */
 .nav {
-  padding : auto;
+  padding: auto;
   display: flex;
   justify-content: flex-start;
   align-items: top;
   position: -webkit-sticky;
-  position: fixed;
-  top : 100px;
+  position: sticky;
+  top: 100px;
   height: 100%;
-  width : 20%;
+  width: 20%;
 }
 
 .nav__container {
-    background-color: #eaf2fa;
+  background-color: #eaf2fa;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  height: 100%;
+  height: 80px;
   margin: 0;
   position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .nav__container__actions {
-  display: inline-flex;
-  flex-flow: column nowrap;
-  padding-left: 50px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 50px;
   flex: 1;
 }
+
+.nav__container__actions a {
+  color: #333;
+  font-size: 18px;
+  text-decoration: none;
+  margin-right: 20px;
+  transition: all 0.3s ease;
+}
+
+.nav__container__actions a:hover {
+  color: #0080ff;
+}
+
+.nav__container__actions button {
+  background-color: #0080ff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav__container__actions button:hover {
+  background-color: #0059b3;
+}
+
 
 ul {
   display: flex;
@@ -75,6 +107,19 @@ li:hover {
   text-decoration: none;
 }
 
-#academic, #publication, #other{
-  background-color: whitesmoke;
+/* Degree Card Styles */
+.degree-card h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+p {
+  margin: 5px 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #4f4f4f;
 }
