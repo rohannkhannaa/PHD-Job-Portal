@@ -12,7 +12,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Navbar />} />
+        <Route path="/" element={<Navbar loginScreen = "0" />} />
         <Route path="/profile" element={<><Navbar/> <Profile /></>}/>
       </Routes>
     </BrowserRouter>

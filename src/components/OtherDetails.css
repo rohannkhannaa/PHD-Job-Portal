@@ -1,0 +1,125 @@
+.resume-uploader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-size: 16px;
+  }
+  
+  .upload-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .resume-container,
+  .cover-letter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .file-name {
+    margin: 10px 0;
+  }
+  
+  .resumes-container {
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .resume-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #ced4da;
+    font-size: 16px;
+  }
+
+  .upload-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 16px;
+  }
+  
+  .upload-label {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .upload-input {
+    margin-bottom: 20px;
+  }
+  
+  .upload-button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .upload-button:hover {
+    background-color: #0069d9;
+  }
+  
+  .resume-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 16px;
+  }
+  
+  .resume-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #ced4da;
+  }
+  
+  .resume-title {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .resume-link {
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease;
+  }
+  
+  .resume-link:hover {
+    color: #0056b3;
+  }
+  
+  .delete-button {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #dc3545;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .delete-button:hover {
+    background-color: #c82333;
+  }
+  

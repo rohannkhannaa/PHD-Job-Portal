@@ -2,6 +2,11 @@ import { Link } from "react-scroll";
 import React from "react";
 import Personal from './Personal';
 import Academic from './Academic';
+import Experience from './Experience';
+import Publication from './Publication';
+import Refrees from './Refrees';
+import POR from './POR';
+import OtherDetails  from './OtherDetails';
 import "./Profile.css";
 
 export default function Profile() {
@@ -44,6 +49,11 @@ const [screenWidth] = React.useState(window.innerWidth);
               </Link>
             </li>
             <li>
+              <Link activeClass="active" smooth spy to="POR" duration={200}>
+                 POR
+              </Link>
+            </li>
+            <li>
               <Link activeClass="active" smooth spy to="other" duration={200}>
                  Other Details
               </Link>
@@ -61,10 +71,11 @@ const [screenWidth] = React.useState(window.innerWidth);
       <section id="academic">
         <Academic/>
         </section>
-      <section id="experience">Experience</section>
-      <section id="publication">Publications</section>
-      <section id="reference">Refrees</section>
-      <section id="other">Other details</section>
+      <section id="experience"><Experience/></section>
+      <section id="publication"><Publication/></section>
+      <section id="reference"><Refrees/></section>
+      <section id="POR"><POR/></section>
+      <section id="other"><OtherDetails/></section>
       
     </div>
     </>

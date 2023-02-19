@@ -1,39 +1,149 @@
 .academic-details-container {
-    display: flex;
-    font-size: 14px;
-    flex-direction: column;
+  font-size: 16px;
+  padding: 100px;
+  margin: 0 auto;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 10px rgb(0,0,0,0.1);
+  width: 51%;
+  height: 100%;
+}
+
+.add-degree-button {
+  margin: 20px;
+  padding: 10px 20px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  font-size: small;
+}
+
+.form-group {
+  font-size: small;
+  margin: 10px 0;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.form-group input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1.2rem;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #333;
+}
+
+.form-group input:invalid {
+  border-color: #f00;
+}
+
+.degree-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.degree-card {
+  font-size: 16px;
+  width: 300px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: left;
+}
+
+.degree-card h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.degree-actions {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.degree-actions button {
+  padding: 5px 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+}
+
+.degree-actions button:first-child {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .degree-list {
     justify-content: center;
-    align-items: center;
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px #ccc;
-    width: 54%;
-    margin: 20px;
   }
-  
-  .academic-details-container h2 {
-    margin-bottom: 20px;
-  }
-  
-  .academic-details-container > div {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
-  }
-  
-  .academic-details-container > div > label {
-    margin-right: 10px;
-    font-weight: bold;
-  }
-  
-  .academic-details-container > div > select,
-  .academic-details-container > div > input {
-    margin-top: 5px;
-    padding: 5px;
-    border-radius: 3px;
-    border: 1px solid #ccc;
-    font-size: 16px;
+
+  .degree-card {
     width: 100%;
   }
-  
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 5px 0;
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+}
+
