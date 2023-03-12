@@ -17,13 +17,14 @@ function App(props) {
             <Nav className="me-auto">
               <Nav.Link><Link to = "/" style = {{color : 'black', textDecoration : 'none',}}>  Home  </Link></Nav.Link>
               <Nav.Link><Link to = "/job-profiles" style = {{color : 'black', textDecoration : 'none',}}> Job Profiles </Link></Nav.Link>
+              <Nav.Link><Link to = "/job-post" style = {{color : 'black', textDecoration : 'none',}}> Job Post </Link></Nav.Link>
             </Nav>
-            {loginScreen ?   
+            {loginScreen ?
             (<Nav>
               <NavDropdown title={<FontAwesomeIcon icon= {faUser}/>} id="collasible-nav-dropdown">
                 <NavDropdown.Item ><Link to = "/profile" style = {{color : 'black', textDecoration : 'none',}}> Login </Link></NavDropdown.Item>
                 <NavDropdown.Item><Link to = "/account" style = {{color : 'black', textDecoration : 'none',}}> Register </Link></NavDropdown.Item>
-              </NavDropdown> 
+              </NavDropdown>
             </Nav>) :
               (<Nav>
               <NavDropdown title={<FontAwesomeIcon icon= {faUser}/>} id="collasible-nav-dropdown">
@@ -31,7 +32,7 @@ function App(props) {
                 <NavDropdown.Item><Link to = "/account" style = {{color : 'black', textDecoration : 'none',}}> Account </Link></NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action/3.4"> Logout </NavDropdown.Item>
-              </NavDropdown> 
+              </NavDropdown>
             </Nav>)}
           </Navbar.Collapse>
         </Container>

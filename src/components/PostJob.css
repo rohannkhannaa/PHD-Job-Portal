@@ -1,0 +1,35 @@
+.postJob{
+  width:75%;
+   margin:auto;
+   margin-top:50px;
+  box-shadow: 0 0 5px;
+   padding:20px;
+}
+
+.formDiv{
+  margin:auto;
+}
+
+form{
+  width:75%;
+  margin:auto;
+}
+
+h3{
+  text-align: center;
+}
+
+.inputField{
+  margin-top:10px;
+  margin-bottom:10px;
+  box-shadow:0 0 3px;
+
+}
+
+input, textarea{
+  padding-left: 10px;
+  border:0px;
+  padding-top:10px;
+  padding-bottom:10px;
+  width:100%;
+}
